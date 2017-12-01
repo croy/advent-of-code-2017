@@ -1,0 +1,1 @@
+Advent Of Code 2017. Initial plan: play around with reasonML
