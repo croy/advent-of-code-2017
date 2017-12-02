@@ -1,0 +1,46 @@
+{
+  "name": "advent-of-code-2017",
+  "version": "1.0.0",
+  "description": "Advent Of Code 2017. Initial plan: play around with reasonML",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/croy/advent-of-code-2017.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/croy/advent-of-code-2017/issues"
+  },
+  "homepage": "https://github.com/croy/advent-of-code-2017#readme",
+  "devDependencies": {
+    "@types/ramda": "^0.25.6",
+    "jest": "^21.2.1",
+    "ts-jest": "^21.2.4",
+    "tslint": "^5.8.0",
+    "typescript": "^2.6.2"
+  },
+  "dependencies": {
+    "ramda": "^0.25.0"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "ts",
+      "tsx"
+    ],
+    "transform": {
+      "\\.(js|ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testMatch": [
+      "**/__tests__/**/*.(t|j)s?(x)",
+      "**/?(*.)(spec|test).(t|j)s?(x)"
+    ],
+    "modulePathIgnorePatterns": [
+      "<rootDir>/lib"
+    ]
+  }
+}
