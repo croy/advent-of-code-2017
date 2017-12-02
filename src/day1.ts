@@ -25,3 +25,10 @@ export const part1 = R.pipe(
   convertToPairs(R.add(1)),
   R.map(R.path([0])),
   R.sum);
+
+export const part2 = R.pipe(
+  R.split(""),
+  R.map(convertToNumber),
+  (numbers) => convertToPairs(R.add(numbers.length / 2))(numbers),
+  R.map(R.path([0])),
+  R.sum);
