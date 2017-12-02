@@ -19,16 +19,12 @@ const convertToPairs = (pairIndexCalc) => (numbers: number[]) => {
   )(numbers);
 };
 
-export const part1 = R.pipe(
+export const solver = (indexCalcGen) => R.pipe(
   R.split(""),
   R.map(convertToNumber),
-  convertToPairs(R.add(1)),
+  (numbers) => convertToPairs(indexCalcGen(numbers))(numbers),
   R.map(R.path([0])),
   R.sum);
 
-export const part2 = R.pipe(
-  R.split(""),
-  R.map(convertToNumber),
-  (numbers) => convertToPairs(R.add(numbers.length / 2))(numbers),
-  R.map(R.path([0])),
-  R.sum);
+export const part1 = solver(() => R.add(1));
+export const part2 = solver((xs: any[]) => R.add(xs.length / 2));
