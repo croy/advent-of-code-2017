@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/croy/advent-of-code-2017#readme",
   "devDependencies": {
+    "@types/lodash": "^4.14.86",
     "@types/ramda": "^0.25.6",
     "jest": "^21.2.1",
     "ts-jest": "^21.2.4",
