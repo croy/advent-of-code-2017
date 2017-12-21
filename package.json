@@ -27,6 +27,7 @@
   "dependencies": {
     "@types/jest": "^21.1.8",
     "@types/node": "^8.0.57",
+    "quadratic-roots": "^1.0.0",
     "ramda": "^0.25.0"
   },
   "jest": {
